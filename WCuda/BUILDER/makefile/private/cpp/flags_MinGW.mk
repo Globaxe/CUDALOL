@@ -1,0 +1,1 @@
+/opt/cbi/make/003/private/cpp/flags_MinGW.mk

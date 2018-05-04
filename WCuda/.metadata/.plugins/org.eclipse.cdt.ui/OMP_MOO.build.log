@@ -1,0 +1,441 @@
+15:10:37 **** Build of configuration GCC_ARM_parallel for project OMP_MOO ****
+cbicc gcc arm jall 
+
+--------------------------------------------------------
+Cross Compilation 		       
+--------------------------------------------------------
+
+PLATFORME = jetson
+API       = /opt/arm/jetson
+
+--------------------------------------------------------
+[Runtime] : gcc arm
+--------------------------------------------------------
+
+
+
+[cuda]        : /opt/api/ext/cuda
+
+[jni]         : /opt/api/ext/jni/java-8-openjdk-arm64
+
+[X11]         : /usr/include/X11
+[X11]         : 
+
+[MKL]         : /opt/intel/mkl
+
+[boost]       : /opt/api/ext/boost
+
+[opencv]      : /opt/api/ext/opencv
+[opencv]      : RPATH_LINK : /opt/api/ext/cuda/cuda-8.0/lib/gcc_arm:/opt/arm/L4T_1604_2801/usr_lib
+
+[cpptest]     : /opt/api/ext/cpptest
+
+[gphoto2]     : /opt/api/ext/gphoto2
+
+[urg]         : /opt/api/ext/urg
+
+[wic]         : /opt/api/ext/wic 
+
+
+[pleora]      : /opt/api/ext/pleora
+
+[glm]      : /opt/api/ext/GLM
+
+[Runtime] : BILAT_INFOGRAPHIE           /opt/api/cbi/infographie
+
+     BILAT_TOOLS_JST_HOME             = /opt/api/cbi/infographie/tools
+     BILAT_OPENGL_HOME                = /opt/api/cbi/infographie/opengl
+     BILAT_FENETRAGE_HOME             = /opt/api/cbi/infographie/fenetrage
+     BILAT_IMAGE_HOME                 = /opt/api/cbi/infographie/image
+     BILAT_SCENE_3D_HOME              = /opt/api/cbi/infographie/scene3d
+
+[Runtime] : BILAT_TOOLS                 /opt/api/cbi/tools
+
+     BILAT_TOOLS_CPP_HOME             = /opt/api/cbi/tools/bilat_tools_cpp
+     BILAT_TOOLS_OMP_HOME             = /opt/api/cbi/tools/bilat_tools_omp
+     BILAT_TOOLS_CUDA_HOME            = /opt/api/cbi/tools/bilat_tools_cuda
+     BILAT_TOOLS_MKL_HOME             = /opt/api/cbi/tools/bilat_tools_mkl
+     BILAT_TOOLS_OPENCV_HOME          = /opt/api/cbi/tools/bilat_tools_opencv
+     BILAT_TOOLS_V4L_HOME             = /opt/api/cbi/tools/bilat_tools_v4l
+     BILAT_TOOLS_CUDA_IMAGE_HOME      = /opt/api/cbi/tools/bilat_tools_cuda_image
+     BILAT_TOOLS_CUDA_IMAGE_CV_HOME   = /opt/api/cbi/tools/bilat_tools_cuda_image_cv
+     BILAT_TOOLS_IMAGE_HOME           = /opt/api/cbi/tools/bilat_tools_image
+     BILAT_TOOLS_IMAGE_CV_HOME        = /opt/api/cbi/tools/bilat_tools_image_cv
+     BILAT_TOOLS_CUDA_3D_HOME         = /opt/api/cbi/tools/bilat_tools_cuda_3D
+     BILAT_TOOLS_JNI_HOME             = /opt/api/cbi/tools/bilat_tools_jni
+
+[Runtime] : BILAT_CAPTEUR               /opt/api/cbi/capteur
+
+     BILAT_GPHOTO2_HOME                 = /opt/api/cbi/capteur/bilat_gphoto2
+     BILAT_LASER_HOME                   = /opt/api/cbi/capteur/bilat_laser
+     BILAT_LIDAR_HOME                   = /opt/api/cbi/capteur/bilat_lidar
+     BILAT_TAU2_HOME                    = /opt/api/cbi/capteur/bilat_tau2
+     BILAT_SPEECH_HOME                  = /opt/api/cbi/capteur/bilat_speech
+     BILAT_GPS_HOME                     = /opt/api/cbi/capteur/bilat_gps
+     BILAT_PIPES_P2P_HOME               = /opt/api/cbi/capteur/bilat_pipes_p2p
+     BILAT_PIPES_CLIENT_HOME            = /opt/api/cbi/capteur/bilat_pipes_client
+     BILAT_PIPES_CLIENT_SERVER_JAVA_HOME= /opt/api/cbi/capteur/bilat_pipes_client_server_java
+
+--------------------------------------------------------
+[Runtime] : gcc arm : Ready!
+--------------------------------------------------------
+
+
+aarch64-linux-gnu-g++-5 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+[Make] : GCC : jall
+
+==================================================================================
+[CBI] -> Target Name  : OMP_MOO_gcc_ARM_64
+[CBI] ->
+[CBI] -> Build     	  : /tmp/ramdrive/bilat/Targets/OMP_MOO/bin/OMP_MOO_gcc_ARM_64.run
+[CBI] -> Deploy       : ../RELEASE/bin
+[CBI] ->
+[CBI] -> Type	 	  : EXE
+[CBI] -> Arch	 	  : ARM_64
+[CBI] -> OS	 		  : Linux
+[CBI] -> User	 	  : bilat
+[CBI] ->
+[CBI] -> Task		  : Compiling-Linking
+==================================================================================
+
+[CBI] -> SRC AUX (Recursif) :
+[CBI] ->
+[CBI] ->              : ../BilatUtil_CPP/src/core
+[CBI] ->              : /opt/api/ext/cpptest/112/LIB_STATIC/gcc_arm
+
+[CBI] -> CXXFLAGS (Partial) :
+[CBI] ->
+[CBI] ->              : -O3
+[CBI] ->              : -fopenmp
+[CBI] ->              : -std=c++11
+
+[CBI] -> LDFLAGS (Partial) :
+[CBI] ->
+
+[CBI] -> INC_PATH (auto detect):
+[CBI] ->              : ../BilatUtil_CPP/src/core/utils/header/
+[CBI] ->              : src/cpp/core/omp/02_pi/
+[CBI] ->              : src/cpp/core/omp/03_dotProd/
+[CBI] ->              : src/cpp/core/omp/04_histo/
+[CBI] ->              : src/cpp/test/unit/01_Test_Hello/
+[CBI] ->              : src/cpp/test/unit/02_Test_Pi/
+[CBI] ->              : src/cpp/test/unit/03_Test_DotProd/
+[CBI] ->              : src/cpp/test/unit/04_Test_Histo/
+[CBI] ->              : src/cpp/test/unit/05_Test_Montecarlo/
+[CBI] ->              : src/cpp/test/unit/07_Test_Racine2/
+[CBI] ->              : src/cpp/test/unit/08_Test_VectorADD/
+
+[CBI] -> LIB_PATH (auto detect):
+
+[CBI] -> API_INC :
+[CBI] ->              : /opt/api/cbi/tools/bilat_tools_cpp/303_006/INC
+[CBI] ->              : /opt/api/cbi/tools/bilat_tools_cpp/303_006/INC/namespace_cpu
+[CBI] ->              : /opt/api/cbi/tools/bilat_tools_omp/303_006/INC
+[CBI] ->              : /opt/api/cbi/tools/bilat_tools_omp/303_006/INC/OMP_Tools
+[CBI] ->              : /opt/api/cbi/tools/bilat_tools_omp/303_006/INC/OMP_Tools/header
+[CBI] ->              : /opt/api/ext/cpptest/112/INC
+[CBI] ->              : /opt/api/ext/cpptest/112/INC/extension
+
+[CBI] -> API_BIN :
+[CBI] ->              : /opt/api/cbi/tools/bilat_tools_cpp/303_006/BIN/gcc_arm
+[CBI] ->              : /opt/api/cbi/tools/bilat_tools_omp/303_006/BIN/gcc_arm
+
+[CBI] -> API_LIBRARIES_STATIC :
+[CBI] ->              : /opt/api/ext/cpptest/112/LIB_STATIC/gcc_arm
+
+[CBI] -> API_LIBRARIES :
+[CBI] ->              : BilatTools_CPP_303_006_gcc_ARM_64
+[CBI] ->              : BilatTools_OMP_303_006_gcc_ARM_64
+
+[CBI] -> Create folder : /tmp/ramdrive/bilat/Targets/OMP_MOO/bin
+[CBI] -> Create folder : /tmp/ramdrive/bilat/Targets/OMP_MOO/obj
+
+[CBI] -> Compilation parallel (12 threads)
+
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/main.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/mainCore.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/01_hello/01_helloOMP.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/01_hello/useHello.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/04_histo/04_histogramme_for_PromotionTab.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/04_histo/02_histogramme_entrelacer_promotionTab.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/04_histo/useHisto.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/04_histo/03_histogramme_for_atomic.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/04_histo/01_histogramme_sequentiel.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/05_montecarlo/02_montecarlo_omp_entrelacer_promotionTab.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/05_montecarlo/03_montecarlo_omp_forReduction.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/05_montecarlo/01_montecarlo_sequentiel.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/05_montecarlo/useMontecarlo.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/05_montecarlo/00_montecarlo_tools.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/03_dotProd/04_dotProd_entrelacer_atomic.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/03_dotProd/05_dotProd_for_critical.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/03_dotProd/07_dotProd_for_promotionTab.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/03_dotProd/00_dotProd_tools.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/03_dotProd/01_dotProd_sequential.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/03_dotProd/02_dotProd_entrelacer_promotionTab.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/03_dotProd/useDotProd.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/03_dotProd/08_dotProd_for_reduction.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/03_dotProd/06_dotProd_for_atomique.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/03_dotProd/03_dotProd_entrelacer_critique.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/exConsolidation/02_racine2/03_racine2_alterner.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/exConsolidation/02_racine2/01_racine2_nonAlterner.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/exConsolidation/02_racine2/useRacine2.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/exConsolidation/02_racine2/04_racine2_alterner.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/exConsolidation/02_racine2/02_racine2_nonAlterner.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/exConsolidation/01_addvector/02_addVector_entrelacer.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/exConsolidation/01_addvector/01_addVector_sequentiel.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/exConsolidation/01_addvector/00_addVectorTools.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/exConsolidation/01_addvector/useAddVector.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/exConsolidation/01_addvector/03_addVector_for.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/02_pi/08_pi_for_reduction.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/02_pi/03_pi_entrelacer_critique.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/02_pi/01_pi_sequentiel.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/02_pi/04_pi_entrelacer_atomic.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/02_pi/05_pi_for_critical.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/02_pi/07_pi_for_promotionTab.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/02_pi/06_pi_for_atomic.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/02_pi/usePI.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/02_pi/02_pi_entrelacer_promotionTab.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/core/omp/02_pi/00_pi_tools.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/test/mainTest.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/test/unit/02_Test_Pi/TestPi.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/test/unit/03_Test_DotProd/TestDotProd.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/test/unit/05_Test_Montecarlo/TestMontecarloPi.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/test/unit/04_Test_Histo/TestHisto.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/test/unit/08_Test_VectorADD/TestVectorAdd.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/test/unit/01_Test_Hello/TestHello.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : src/cpp/test/unit/07_Test_Racine2/TestRacine2.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : ../BilatUtil_CPP/src/core/utils/cpp/rawMajorTools.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : ../BilatUtil_CPP/src/core/utils/cpp/tab2DTools.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : ../BilatUtil_CPP/src/core/utils/cpp/histo.cpp
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : ../BilatUtil_CPP/src/core/utils/cpp/tab1DTools.cpp
+In file included from /opt/api/ext/cpptest/112/INC/cpptest.h:34:0,
+                 from src/cpp/test/unit/02_Test_Pi/TestPi.h:4,
+                 from src/cpp/test/unit/02_Test_Pi/TestPi.cpp:1:
+/opt/api/ext/cpptest/112/INC/cpptest-suite.h:58:17: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   void add(std::auto_ptr<Suite> suite);
+                 ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from src/cpp/test/unit/02_Test_Pi/TestPi.h:4,
+                 from src/cpp/test/unit/02_Test_Pi/TestPi.cpp:1:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+In file included from /opt/api/ext/cpptest/112/INC/cpptest.h:34:0,
+                 from src/cpp/test/unit/03_Test_DotProd/TestDotProd.h:4,
+                 from src/cpp/test/unit/03_Test_DotProd/TestDotProd.cpp:1:
+/opt/api/ext/cpptest/112/INC/cpptest-suite.h:58:17: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   void add(std::auto_ptr<Suite> suite);
+                 ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from src/cpp/test/unit/03_Test_DotProd/TestDotProd.h:4,
+                 from src/cpp/test/unit/03_Test_DotProd/TestDotProd.cpp:1:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+In file included from /opt/api/ext/cpptest/112/INC/cpptest.h:34:0,
+                 from src/cpp/test/unit/04_Test_Histo/TestHisto.h:4,
+                 from src/cpp/test/unit/04_Test_Histo/TestHisto.cpp:2:
+/opt/api/ext/cpptest/112/INC/cpptest-suite.h:58:17: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   void add(std::auto_ptr<Suite> suite);
+                 ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from src/cpp/test/unit/04_Test_Histo/TestHisto.h:4,
+                 from src/cpp/test/unit/04_Test_Histo/TestHisto.cpp:2:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+In file included from /opt/api/ext/cpptest/112/INC/cpptest.h:34:0,
+                 from src/cpp/test/unit/05_Test_Montecarlo/TestMontecarloPI.h:4,
+                 from src/cpp/test/unit/05_Test_Montecarlo/TestMontecarloPi.cpp:1:
+/opt/api/ext/cpptest/112/INC/cpptest-suite.h:58:17: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   void add(std::auto_ptr<Suite> suite);
+                 ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from src/cpp/test/unit/05_Test_Montecarlo/TestMontecarloPI.h:4,
+                 from src/cpp/test/unit/05_Test_Montecarlo/TestMontecarloPi.cpp:1:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+In file included from /opt/api/ext/cpptest/112/INC/cpptest.h:34:0,
+                 from /opt/api/ext/cpptest/112/INC/extension/cppTest+.h:4,
+                 from src/cpp/test/mainTest.cpp:4:
+/opt/api/ext/cpptest/112/INC/cpptest-suite.h:58:17: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   void add(std::auto_ptr<Suite> suite);
+                 ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from /opt/api/ext/cpptest/112/INC/extension/cppTest+.h:4,
+                 from src/cpp/test/mainTest.cpp:4:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+src/cpp/test/mainTest.cpp: In function ‘bool testALL()’:
+src/cpp/test/mainTest.cpp:53:24: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+     testSuite.add(std::auto_ptr<Test::Suite>(new TestHello()));
+                        ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from /opt/api/ext/cpptest/112/INC/extension/cppTest+.h:4,
+                 from src/cpp/test/mainTest.cpp:4:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+src/cpp/test/mainTest.cpp:54:24: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+     testSuite.add(std::auto_ptr<Test::Suite>(new TestPi()));
+                        ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from /opt/api/ext/cpptest/112/INC/extension/cppTest+.h:4,
+                 from src/cpp/test/mainTest.cpp:4:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+src/cpp/test/mainTest.cpp:55:24: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+     testSuite.add(std::auto_ptr<Test::Suite>(new TestDotProd()));
+                        ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from /opt/api/ext/cpptest/112/INC/extension/cppTest+.h:4,
+                 from src/cpp/test/mainTest.cpp:4:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+src/cpp/test/mainTest.cpp:56:24: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+     testSuite.add(std::auto_ptr<Test::Suite>(new TestHisto()));
+                        ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from /opt/api/ext/cpptest/112/INC/extension/cppTest+.h:4,
+                 from src/cpp/test/mainTest.cpp:4:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+src/cpp/test/mainTest.cpp:57:24: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+     testSuite.add(std::auto_ptr<Test::Suite>(new TestMontecarloPI()));
+                        ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from /opt/api/ext/cpptest/112/INC/extension/cppTest+.h:4,
+                 from src/cpp/test/mainTest.cpp:4:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+src/cpp/test/mainTest.cpp:59:23: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+    testSuite.add(std::auto_ptr<Test::Suite>(new TestVectorAdd()));
+                       ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from /opt/api/ext/cpptest/112/INC/extension/cppTest+.h:4,
+                 from src/cpp/test/mainTest.cpp:4:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+src/cpp/test/mainTest.cpp:60:23: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+    testSuite.add(std::auto_ptr<Test::Suite>(new TestRacine2()));
+                       ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from /opt/api/ext/cpptest/112/INC/extension/cppTest+.h:4,
+                 from src/cpp/test/mainTest.cpp:4:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+[OMP_MOO_gcc_ARM_64] -> g++ARM compiling .cpp : ../BilatUtil_CPP/src/core/utils/cpp/vectorTools.cpp
+In file included from /opt/api/ext/cpptest/112/INC/cpptest.h:34:0,
+                 from src/cpp/test/unit/08_Test_VectorADD/TestVectorAdd.h:4,
+                 from src/cpp/test/unit/08_Test_VectorADD/TestVectorAdd.cpp:1:
+/opt/api/ext/cpptest/112/INC/cpptest-suite.h:58:17: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   void add(std::auto_ptr<Suite> suite);
+                 ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from src/cpp/test/unit/08_Test_VectorADD/TestVectorAdd.h:4,
+                 from src/cpp/test/unit/08_Test_VectorADD/TestVectorAdd.cpp:1:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+In file included from /opt/api/ext/cpptest/112/INC/cpptest.h:34:0,
+                 from src/cpp/test/unit/01_Test_Hello/TestHello.h:4,
+                 from src/cpp/test/unit/01_Test_Hello/TestHello.cpp:1:
+/opt/api/ext/cpptest/112/INC/cpptest-suite.h:58:17: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   void add(std::auto_ptr<Suite> suite);
+                 ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from src/cpp/test/unit/01_Test_Hello/TestHello.h:4,
+                 from src/cpp/test/unit/01_Test_Hello/TestHello.cpp:1:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+In file included from /opt/api/ext/cpptest/112/INC/cpptest.h:34:0,
+                 from src/cpp/test/unit/07_Test_Racine2/TestRacine2.h:4,
+                 from src/cpp/test/unit/07_Test_Racine2/TestRacine2.cpp:1:
+/opt/api/ext/cpptest/112/INC/cpptest-suite.h:58:17: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   void add(std::auto_ptr<Suite> suite);
+                 ^
+In file included from /usr/aarch64-linux-gnu/include/c++/5/memory:81:0,
+                 from /opt/api/ext/cpptest/112/INC/cpptest-suite.h:33,
+                 from /opt/api/ext/cpptest/112/INC/cpptest.h:34,
+                 from src/cpp/test/unit/07_Test_Racine2/TestRacine2.h:4,
+                 from src/cpp/test/unit/07_Test_Racine2/TestRacine2.cpp:1:
+/usr/aarch64-linux-gnu/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+
+[CBI] -> Linking to   : /tmp/ramdrive/bilat/Targets/OMP_MOO/bin/OMP_MOO_gcc_ARM_64.run
+
+[CBI] -> Library Link :
+[CBI] ->              : -lBilatTools_CPP_303_006_gcc_ARM_64
+[CBI] ->              : -lBilatTools_OMP_303_006_gcc_ARM_64
+[CBI] ->              : -lCpp_Test_112_gcc_ARM_64
+[CBI] ->              : -lgomp
+
+==================================================================================
+[CBI] -> Target Name  : OMP_MOO_gcc_ARM_64
+[CBI] -> Location     : /tmp/ramdrive/bilat/Targets/OMP_MOO/bin/OMP_MOO_gcc_ARM_64.run
+[CBI] -> Deploy 	  : ../RELEASE/bin
+[CBI] ->
+[CBI] -> Type	 	  : EXE
+[CBI] -> Arch	 	  : ARM_64
+[CBI] -> OS	 		  : Linux
+[CBI] -> User	 	  : bilat
+[CBI] ->
+[CBI] -> Compilateur  : g++ARM
+[CBI] -> Task	      : End Compiling-Linking !
+[CBI] -> Time		  : 2 (s)
+==================================================================================
+
+
+[CBI] -> Deploying    : ../RELEASE/bin/OMP_MOO_gcc_ARM_64.run
+
+[CBI] -> Symlink Project Inc
+[CBI] -> To update code completion : ctrl-shift-s   or   gui/index/rebuild
+
+[CBI] -> OMP_MOO_gcc_ARM_64 : End ALL!
+
+
+15:10:39 Build Finished (took 2s.496ms)
+

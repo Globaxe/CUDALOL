@@ -1,0 +1,1 @@
+/home/arc9/CUDA/toStudent/code/WCuda/Ex_Cpp/src/Algo/AlgoB.h

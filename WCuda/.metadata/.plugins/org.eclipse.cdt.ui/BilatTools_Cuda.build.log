@@ -1,0 +1,238 @@
+14:51:25 **** Build of configuration CudaGCC_ARM_parallel for project BilatTools_Cuda ****
+cbicc cuda arm jall 
+
+--------------------------------------------------------
+Cross Compilation 		       
+--------------------------------------------------------
+
+PLATFORME = jetson
+API       = /opt/arm/jetson
+
+--------------------------------------------------------
+[Runtime] : gcc arm
+--------------------------------------------------------
+
+
+
+[cuda]        : /opt/api/ext/cuda
+
+[jni]         : /opt/api/ext/jni/java-8-openjdk-arm64
+
+[X11]         : /usr/include/X11
+[X11]         : 
+
+[MKL]         : /opt/intel/mkl
+
+[boost]       : /opt/api/ext/boost
+
+[opencv]      : /opt/api/ext/opencv
+[opencv]      : RPATH_LINK : /opt/api/ext/cuda/cuda-8.0/lib/gcc_arm:/opt/arm/L4T_1604_2801/usr_lib
+
+[cpptest]     : /opt/api/ext/cpptest
+
+[gphoto2]     : /opt/api/ext/gphoto2
+
+[urg]         : /opt/api/ext/urg
+
+[wic]         : /opt/api/ext/wic 
+
+
+[pleora]      : /opt/api/ext/pleora
+
+[glm]      : /opt/api/ext/GLM
+
+[Runtime] : BILAT_INFOGRAPHIE           /opt/api/cbi/infographie
+
+     BILAT_TOOLS_JST_HOME             = /opt/api/cbi/infographie/tools
+     BILAT_OPENGL_HOME                = /opt/api/cbi/infographie/opengl
+     BILAT_FENETRAGE_HOME             = /opt/api/cbi/infographie/fenetrage
+find: ‘/opt/api/cbi/tools/bilat_tools_cpp/303_006/INC’: No such file or directory
+find: ‘/opt/api/ext/cpptest/112/INC’: No such file or directory
+     BILAT_IMAGE_HOME                 = /opt/api/cbi/infographie/image
+     BILAT_SCENE_3D_HOME              = /opt/api/cbi/infographie/scene3d
+
+[Runtime] : BILAT_TOOLS                 /opt/api/cbi/tools
+
+     BILAT_TOOLS_CPP_HOME             = /opt/api/cbi/tools/bilat_tools_cpp
+     BILAT_TOOLS_OMP_HOME             = /opt/api/cbi/tools/bilat_tools_omp
+     BILAT_TOOLS_CUDA_HOME            = /opt/api/cbi/tools/bilat_tools_cuda
+     BILAT_TOOLS_MKL_HOME             = /opt/api/cbi/tools/bilat_tools_mkl
+     BILAT_TOOLS_OPENCV_HOME          = /opt/api/cbi/tools/bilat_tools_opencv
+     BILAT_TOOLS_V4L_HOME             = /opt/api/cbi/tools/bilat_tools_v4l
+     BILAT_TOOLS_CUDA_IMAGE_HOME      = /opt/api/cbi/tools/bilat_tools_cuda_image
+     BILAT_TOOLS_CUDA_IMAGE_CV_HOME   = /opt/api/cbi/tools/bilat_tools_cuda_image_cv
+     BILAT_TOOLS_IMAGE_HOME           = /opt/api/cbi/tools/bilat_tools_image
+     BILAT_TOOLS_IMAGE_CV_HOME        = /opt/api/cbi/tools/bilat_tools_image_cv
+     BILAT_TOOLS_CUDA_3D_HOME         = /opt/api/cbi/tools/bilat_tools_cuda_3D
+     BILAT_TOOLS_JNI_HOME             = /opt/api/cbi/tools/bilat_tools_jni
+
+[Runtime] : BILAT_CAPTEUR               /opt/api/cbi/capteur
+
+     BILAT_GPHOTO2_HOME                 = /opt/api/cbi/capteur/bilat_gphoto2
+     BILAT_LASER_HOME                   = /opt/api/cbi/capteur/bilat_laser
+     BILAT_LIDAR_HOME                   = /opt/api/cbi/capteur/bilat_lidar
+     BILAT_TAU2_HOME                    = /opt/api/cbi/capteur/bilat_tau2
+     BILAT_SPEECH_HOME                  = /opt/api/cbi/capteur/bilat_speech
+     BILAT_GPS_HOME                     = /opt/api/cbi/capteur/bilat_gps
+     BILAT_PIPES_P2P_HOME               = /opt/api/cbi/capteur/bilat_pipes_p2p
+     BILAT_PIPES_CLIENT_HOME            = /opt/api/cbi/capteur/bilat_pipes_client
+     BILAT_PIPES_CLIENT_SERVER_JAVA_HOME= /opt/api/cbi/capteur/bilat_pipes_client_server_java
+
+--------------------------------------------------------
+[Runtime] : gcc arm : Ready!
+--------------------------------------------------------
+
+
+find: ‘/opt/api/cbi/tools/bilat_tools_cpp/303_006/BIN/gcc_arm’: No such file or directory
+aarch64-linux-gnu-g++-5 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2016 NVIDIA Corporation
+Built on Tue_Jan_10_13:22:03_CST_2017
+Cuda compilation tools, release 8.0, V8.0.61
+
+
+[CUDA GCC] : jall
+
+find: ‘/opt/api/cbi/tools/bilat_tools_cpp/303_006/BIN/gcc_arm’: No such file or directory
+find: ‘/opt/api/ext/cpptest/112/LIB_STATIC/gcc_arm’: No such file or directory
+
+==================================================================================
+[CBI] -> Target Name  : BilatTools_Cuda_303_006_cuda_80_ARM_64
+[CBI] ->
+[CBI] -> Build        : /tmp/ramdrive/bilat/Targets/BilatTools_Cuda_303_006/bin/libBilatTools_Cuda_303_006_cuda_80_ARM_64.so
+[CBI] -> Deploy       : ../RELEASE/bin
+[CBI] ->
+[CBI] -> Type	      : SHARED_LIB
+[CBI] -> Arch	      : ARM_64
+[CBI] -> OS	 		  : Linux
+[CBI] -> User	 	  : bilat
+[CBI] ->
+[CBI] -> Task		  : Compiling-Linking !
+==================================================================================
+
+[CBI] -> SRC AUX (Recursif) :
+[CBI] ->
+
+[CBI] -> CXXFLAGS (Partial) :
+[CBI] ->
+[CBI] ->              : -fPIC
+[CBI] ->              : -fopenmp
+[CBI] ->              : -std=c++11
+[CBI] ->              : -O3
+
+[CBI] -> CXXLDFLAGS (Partial) :
+[CBI] ->
+
+[CBI] -> NVCCFLAGS (Partial) :
+[CBI] ->
+[CBI] ->              : --fmad=true
+[CBI] ->              : -arch=sm_52
+[CBI] ->              : -ccbin
+[CBI] ->              : -m64
+[CBI] ->              : -std=c++11
+[CBI] ->              : -use_fast_math
+[CBI] ->              : g++ARM
+
+[CBI] -> NVCCLDFLAGS (Partial) :
+[CBI] ->
+[CBI] ->              : -arch=sm_52
+[CBI] ->              : -ccbin
+[CBI] ->              : -shared
+[CBI] ->              : g++ARM
+
+[CBI] -> INC_PATH (auto detect):
+[CBI] ->              : src/core/cudatools/cpp/host/
+[CBI] ->              : src/core/cudatools/header/both/
+[CBI] ->              : src/core/cudatools/header/device/
+[CBI] ->              : src/core/cudatools/header/device/curand/
+[CBI] ->              : src/core/cudatools/header/device/reduction/
+[CBI] ->              : src/core/cudatools/header/device/synchronisation/
+[CBI] ->              : src/core/cudatools/header/host/
+[CBI] ->              : src/core/cudatools/header/mixte/
+[CBI] ->              : src/core/cudatools/nvidia/
+
+
+[CBI] -> LIB_PATH (auto detect):
+
+[CBI] -> LIB_PATH (auto detect):
+
+[CBI] -> API_INC :
+
+[CBI] -> API_BIN :
+[CBI] ->              : /opt/api/ext/cuda/cuda-8.0/lib/gcc_arm
+[CBI] ->              : /opt/api/ext/cuda/cuda-8.0/lib/gcc_arm/stubs
+
+[CBI] -> API_LIBRARIES_STATIC :
+
+[CBI] -> API_LIBRARIES :
+[CBI] ->              : cublas
+[CBI] ->              : cuda
+[CBI] ->              : cudart
+[CBI] ->              : cufft
+[CBI] ->              : cufftw
+[CBI] ->              : cuinj64
+[CBI] ->              : curand
+[CBI] ->              : cusolver
+[CBI] ->              : cusparse
+[CBI] ->              : nppc
+[CBI] ->              : nppi
+[CBI] ->              : nppial
+[CBI] ->              : nppicc
+[CBI] ->              : nppicom
+[CBI] ->              : nppidei
+[CBI] ->              : nppif
+[CBI] ->              : nppig
+[CBI] ->              : nppim
+[CBI] ->              : nppist
+[CBI] ->              : nppisu
+[CBI] ->              : nppitc
+[CBI] ->              : npps
+[CBI] ->              : nvToolsExt
+[CBI] ->              : nvblas
+[CBI] ->              : nvgraph
+[CBI] ->              : nvidia-ml
+[CBI] ->              : nvrtc
+[CBI] ->              : nvrtc-builtins
+
+[CBI] -> Create folder : /tmp/ramdrive/bilat/Targets/BilatTools_Cuda_303_006/bin
+[CBI] -> Create folder : /tmp/ramdrive/bilat/Targets/BilatTools_Cuda_303_006/obj
+[CBI] -> Create folder : /tmp/ramdrive/bilat/Targets/BilatTools_Cuda_303_006/cubin
+
+[CBI] -> Compilation parallel (12 threads)
+
+find: ‘/opt/api/cbi/tools/bilat_tools_cpp/303_006/INC’: No such file or directory
+find: ‘/opt/api/ext/cpptest/112/INC’: No such file or directory
+find: ‘/opt/api/cbi/tools/bilat_tools_cpp/303_006/BIN/gcc_arm’: No such file or directory
+find: ‘/opt/api/cbi/tools/bilat_tools_cpp/303_006/BIN/gcc_arm’: No such file or directory
+find: ‘/opt/api/ext/cpptest/112/LIB_STATIC/gcc_arm’: No such file or directory
+[BilatTools_Cuda_303_006_cuda_80_ARM_64] -> g++ compiling .cpp : src/main.cpp
+[BilatTools_Cuda_303_006_cuda_80_ARM_64] -> g++ compiling .cpp : src/use/mainCPP.cpp
+[BilatTools_Cuda_303_006_cuda_80_ARM_64] -> g++ compiling .cpp : src/core/cudatools/header/host/Options.cpp
+[BilatTools_Cuda_303_006_cuda_80_ARM_64] -> g++ compiling .cpp : src/core/cudatools/cpp/host/cudaTools.cpp
+[BilatTools_Cuda_303_006_cuda_80_ARM_64] -> g++ compiling .cpp : src/core/cudatools/cpp/host/Grid.cpp
+[BilatTools_Cuda_303_006_cuda_80_ARM_64] -> g++ compiling .cpp : src/core/cudatools/cpp/host/ChronoCuda.cpp
+[BilatTools_Cuda_303_006_cuda_80_ARM_64] -> g++ compiling .cpp : src/core/cudatools/cpp/host/Device.cpp
+[BilatTools_Cuda_303_006_cuda_80_ARM_64] -> nvcc compiling .cu : src/use/mainCU.cu
+src/core/cudatools/cpp/host/cudaTools.cpp:7:25: fatal error: StringTools.h: No such file or directory
+ #include "StringTools.h"
+                         ^
+compilation terminated.
+src/core/cudatools/cpp/host/Device.cpp:8:20: fatal error: Chrono.h: No such file or directory
+ #include "Chrono.h"
+                    ^
+compilation terminated.
+make[1]: *** [/tmp/ramdrive/bilat/Targets/BilatTools_Cuda_303_006/obj/cudaTools.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+../BUILDER/makefile/private/cuda/rules_linux.mk:75: recipe for target '/tmp/ramdrive/bilat/Targets/BilatTools_Cuda_303_006/obj/cudaTools.o' failed
+../BUILDER/makefile/private/cuda/rules_linux.mk:75: recipe for target '/tmp/ramdrive/bilat/Targets/BilatTools_Cuda_303_006/obj/Device.o' failed
+make[1]: *** [/tmp/ramdrive/bilat/Targets/BilatTools_Cuda_303_006/obj/Device.o] Error 1
+../BUILDER/makefile/private/cuda/parallel.mk:35: recipe for target 'jall' failed
+make: *** [jall] Error 2
+
+14:51:29 Build Finished (took 4s.538ms)
+

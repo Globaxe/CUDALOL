@@ -1,0 +1,173 @@
+14:51:57 **** Build of configuration GCC_ARM_parallel for project BilatUtil_CPP ****
+cbicc gcc arm jall 
+
+--------------------------------------------------------
+Cross Compilation 		       
+--------------------------------------------------------
+
+PLATFORME = jetson
+API       = /opt/arm/jetson
+
+--------------------------------------------------------
+[Runtime] : gcc arm
+--------------------------------------------------------
+
+
+
+[cuda]        : /opt/api/ext/cuda
+
+[jni]         : /opt/api/ext/jni/java-8-openjdk-arm64
+
+[X11]         : /usr/include/X11
+[X11]         : 
+
+[MKL]         : /opt/intel/mkl
+
+[boost]       : /opt/api/ext/boost
+
+[opencv]      : /opt/api/ext/opencv
+[opencv]      : RPATH_LINK : /opt/api/ext/cuda/cuda-8.0/lib/gcc_arm:/opt/arm/L4T_1604_2801/usr_lib
+
+[cpptest]     : /opt/api/ext/cpptest
+
+[gphoto2]     : /opt/api/ext/gphoto2
+
+[urg]         : /opt/api/ext/urg
+
+[wic]         : /opt/api/ext/wic 
+
+
+[pleora]      : /opt/api/ext/pleora
+
+[glm]      : /opt/api/ext/GLM
+
+[Runtime] : BILAT_INFOGRAPHIE           /opt/api/cbi/infographie
+
+     BILAT_TOOLS_JST_HOME             = /opt/api/cbi/infographie/tools
+     BILAT_OPENGL_HOME                = /opt/api/cbi/infographie/opengl
+find: ‘/opt/api/ext/cpptest/112/INC’: No such file or directory
+     BILAT_FENETRAGE_HOME             = /opt/api/cbi/infographie/fenetrage
+     BILAT_IMAGE_HOME                 = /opt/api/cbi/infographie/image
+     BILAT_SCENE_3D_HOME              = /opt/api/cbi/infographie/scene3d
+find: ‘/opt/api/ext/cpptest/112/LIB_STATIC/gcc_arm’: No such file or directory
+
+[Runtime] : BILAT_TOOLS                 /opt/api/cbi/tools
+
+     BILAT_TOOLS_CPP_HOME             = /opt/api/cbi/tools/bilat_tools_cpp
+     BILAT_TOOLS_OMP_HOME             = /opt/api/cbi/tools/bilat_tools_omp
+     BILAT_TOOLS_CUDA_HOME            = /opt/api/cbi/tools/bilat_tools_cuda
+     BILAT_TOOLS_MKL_HOME             = /opt/api/cbi/tools/bilat_tools_mkl
+     BILAT_TOOLS_OPENCV_HOME          = /opt/api/cbi/tools/bilat_tools_opencv
+     BILAT_TOOLS_V4L_HOME             = /opt/api/cbi/tools/bilat_tools_v4l
+     BILAT_TOOLS_CUDA_IMAGE_HOME      = /opt/api/cbi/tools/bilat_tools_cuda_image
+     BILAT_TOOLS_CUDA_IMAGE_CV_HOME   = /opt/api/cbi/tools/bilat_tools_cuda_image_cv
+     BILAT_TOOLS_IMAGE_HOME           = /opt/api/cbi/tools/bilat_tools_image
+     BILAT_TOOLS_IMAGE_CV_HOME        = /opt/api/cbi/tools/bilat_tools_image_cv
+     BILAT_TOOLS_CUDA_3D_HOME         = /opt/api/cbi/tools/bilat_tools_cuda_3D
+     BILAT_TOOLS_JNI_HOME             = /opt/api/cbi/tools/bilat_tools_jni
+
+[Runtime] : BILAT_CAPTEUR               /opt/api/cbi/capteur
+
+     BILAT_GPHOTO2_HOME                 = /opt/api/cbi/capteur/bilat_gphoto2
+     BILAT_LASER_HOME                   = /opt/api/cbi/capteur/bilat_laser
+     BILAT_LIDAR_HOME                   = /opt/api/cbi/capteur/bilat_lidar
+     BILAT_TAU2_HOME                    = /opt/api/cbi/capteur/bilat_tau2
+     BILAT_SPEECH_HOME                  = /opt/api/cbi/capteur/bilat_speech
+     BILAT_GPS_HOME                     = /opt/api/cbi/capteur/bilat_gps
+     BILAT_PIPES_P2P_HOME               = /opt/api/cbi/capteur/bilat_pipes_p2p
+     BILAT_PIPES_CLIENT_HOME            = /opt/api/cbi/capteur/bilat_pipes_client
+     BILAT_PIPES_CLIENT_SERVER_JAVA_HOME= /opt/api/cbi/capteur/bilat_pipes_client_server_java
+
+--------------------------------------------------------
+[Runtime] : gcc arm : Ready!
+--------------------------------------------------------
+
+
+aarch64-linux-gnu-g++-5 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+[Make] : GCC : jall
+
+==================================================================================
+[CBI] -> Target Name  : BilatUtil_CPP_303_006_gcc_ARM_64
+[CBI] ->
+[CBI] -> Build     	  : /tmp/ramdrive/bilat/Targets/BilatUtil_CPP_303_006/bin/libBilatUtil_CPP_303_006_gcc_ARM_64.a
+[CBI] -> Deploy       : ../RELEASE/bin
+[CBI] ->
+[CBI] -> Type	 	  : STATIC_LIB
+[CBI] -> Arch	 	  : ARM_64
+[CBI] -> OS	 		  : Linux
+[CBI] -> User	 	  : bilat
+[CBI] ->
+[CBI] -> Task		  : Compiling-Linking
+==================================================================================
+
+[CBI] -> SRC AUX (Recursif) :
+[CBI] ->
+[CBI] ->              : ../BilatTools_CPP/src/core
+
+[CBI] -> CXXFLAGS (Partial) :
+[CBI] ->
+[CBI] ->              : -O3
+[CBI] ->              : -fPIC
+[CBI] ->              : -fopenmp
+[CBI] ->              : -std=c++11
+
+
+[CBI] -> INC_PATH (auto detect):
+[CBI] ->              : ../BilatTools_CPP/src/core/tools/header/
+[CBI] ->              : ../BilatTools_CPP/src/core/tools/header/namespace_cpu/
+[CBI] ->              : src/core/utils/header/
+[CBI] ->              : src/test/header/
+
+[CBI] -> LIB_PATH (auto detect):
+
+[CBI] -> API_INC :
+
+[CBI] -> API_BIN :
+
+[CBI] -> API_LIBRARIES_STATIC :
+
+[CBI] -> API_LIBRARIES :
+
+[CBI] -> Create folder : /tmp/ramdrive/bilat/Targets/BilatUtil_CPP_303_006/bin
+[CBI] -> Create folder : /tmp/ramdrive/bilat/Targets/BilatUtil_CPP_303_006/obj
+
+[CBI] -> Compilation parallel (12 threads)
+
+find: ‘/opt/api/ext/cpptest/112/INC’: No such file or directory
+find: ‘/opt/api/ext/cpptest/112/LIB_STATIC/gcc_arm’: No such file or directory
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : src/main.cpp
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : src/core/utils/cpp/rawMajorTools.cpp
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : src/core/utils/cpp/tab2DTools.cpp
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : src/core/utils/cpp/histo.cpp
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : src/core/utils/cpp/tab1DTools.cpp
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : src/test/mainTest.cpp
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : src/core/utils/cpp/vectorTools.cpp
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : src/test/cpp/TestTab2DJunit.cpp
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : ../BilatTools_CPP/src/core/tools/cpp/Fps.cpp
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : ../BilatTools_CPP/src/core/tools/cpp/AleaTools.cpp
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : ../BilatTools_CPP/src/core/tools/cpp/LimitsTools.cpp
+[BilatUtil_CPP_303_006_gcc_ARM_64] -> g++ARM compiling .cpp : ../BilatTools_CPP/src/core/tools/cpp/TabTools.cpp
+In file included from src/test/cpp/TestTab2DJunit.cpp:1:0:
+src/test/header/TestTab2Dunit.h:3:21: fatal error: cpptest.h: No such file or directory
+../BUILDER/makefile/private/cpp/rules.mk:129: recipe for target '/tmp/ramdrive/bilat/Targets/BilatUtil_CPP_303_006/obj/TestTab2DJunit.o' failed
+ #include "cpptest.h"
+                     ^
+compilation terminated.
+make[1]: *** [/tmp/ramdrive/bilat/Targets/BilatUtil_CPP_303_006/obj/TestTab2DJunit.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+src/test/mainTest.cpp:4:22: fatal error: cppTest+.h: No such file or directory
+ #include "cppTest+.h"
+                      ^
+compilation terminated.
+make[1]: *** [/tmp/ramdrive/bilat/Targets/BilatUtil_CPP_303_006/obj/mainTest.o] Error 1
+../BUILDER/makefile/private/cpp/rules.mk:129: recipe for target '/tmp/ramdrive/bilat/Targets/BilatUtil_CPP_303_006/obj/mainTest.o' failed
+../BUILDER/makefile/private/cpp/parallel.mk:53: recipe for target 'jall' failed
+make: *** [jall] Error 2
+
+14:51:57 Build Finished (took 680ms)
+

@@ -1,0 +1,109 @@
+#include <iostream>
+
+#include "Device.h"
+#include "Slicing.h"
+
+using std::cout;
+using std::endl;
+
+/*----------------------------------------------------------------------*\
+ |*			Declaration 					*|
+ \*---------------------------------------------------------------------*/
+
+/*--------------------------------------*\
+ |*		Imported	 	*|
+ \*-------------------------------------*/
+
+extern __global__ void slicing(float* ptrTabGM,int n);
+extern __global__ void slicingAdvanced(float* ptrTabGM,int n);
+
+/*--------------------------------------*\
+ |*		Public			*|
+ \*-------------------------------------*/
+
+/*--------------------------------------*\
+ |*		Private			*|
+ \*-------------------------------------*/
+
+/*----------------------------------------------------------------------*\
+ |*			Implementation 					*|
+ \*---------------------------------------------------------------------*/
+
+/*--------------------------------------*\
+ |*		Constructeur			*|
+ \*-------------------------------------*/
+
+Slicing::Slicing(const Grid& grid,int n) : n(n)
+    {
+    //pour le non advanced
+    //this->sizeOctet = n * sizeof(float);
+    this->sizeOctet = sizeof(float);
+    result = 0;
+    // MM
+	{
+
+	// MM (malloc Device)
+	    {
+	    Device::malloc(&ptrTabGM, sizeOctet);
+	    Device::memclear(ptrTabGM, sizeOctet);
+	    }
+	}
+
+    // Grid
+	{
+	this->dg = grid.dg;
+	this->db = grid.db;
+	}
+	this->sizeOctetSM = sizeof(float)*this->db.x*this->db.y;
+    }
+
+Slicing::~Slicing(void)
+    {
+    //MM (device free)
+	{
+	Device::free(ptrTabGM);
+	}
+    }
+
+/*--------------------------------------*\
+ |*		Methode			*|
+ \*-------------------------------------*/
+
+void Slicing::run()
+    {
+    //version simple
+    //slicing<<<dg,db>>>(ptrTabGM,n); // assynchrone
+
+    //version advanced
+    slicingAdvanced<<<dg,db,this->sizeOctetSM>>>(ptrTabGM,n);
+
+    //version simple
+//    float* ptrTab = new float[n];
+
+    // MM (Device -> Host)
+	{
+	Device::memcpyDToH(&result, ptrTabGM, sizeOctet); // barriere synchronisation implicite
+	}
+
+      //version simple
+//    for(int i = 0; i<n;i++)
+//	{
+//	result+=ptrTab[i];
+//	}
+//    result = *ptrResult/(float)n;
+//    delete ptrTab;
+
+    }
+
+float Slicing::getResult()
+    {
+    return this->result;
+    }
+
+/*--------------------------------------*\
+ |*		Private			*|
+ \*-------------------------------------*/
+
+/*----------------------------------------------------------------------*\
+ |*			End	 					*|
+ \*---------------------------------------------------------------------*/

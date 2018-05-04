@@ -1,0 +1,92 @@
+#include <iostream>
+
+#include "Device.h"
+#include "Slicing.h"
+
+using std::cout;
+using std::endl;
+
+/*----------------------------------------------------------------------*\
+ |*			Declaration 					*|
+ \*---------------------------------------------------------------------*/
+
+/*--------------------------------------*\
+ |*		Imported	 	*|
+ \*-------------------------------------*/
+
+extern __global__ void slicing(float* ptrTabGM,int n);
+extern __global__ void slicingAdvanced(float* ptrTabGM,int n);
+
+/*--------------------------------------*\
+ |*		Public			*|
+ \*-------------------------------------*/
+
+/*--------------------------------------*\
+ |*		Private			*|
+ \*-------------------------------------*/
+
+/*----------------------------------------------------------------------*\
+ |*			Implementation 					*|
+ \*---------------------------------------------------------------------*/
+
+/*--------------------------------------*\
+ |*		Constructeur			*|
+ \*-------------------------------------*/
+
+Slicing::Slicing(const Grid& grid,int n,float* ptrResult) : n(n) ,ptrResult(ptrResult)
+    {
+    this->sizeOctet = n * sizeof(float);
+    // MM
+	{
+
+	// MM (malloc Device)
+	    {
+	    Device::malloc(&ptrTabGM, sizeOctet);
+	    Device::memclear(ptrTabGM, sizeOctet);
+	    }
+	}
+
+    // Grid
+	{
+	this->dg = grid.dg;
+	this->db = grid.db;
+	}
+	this->sizeOctetSM = sizeof(float)*this->db.x;
+    }
+
+Slicing::~Slicing(void)
+    {
+    //MM (device free)
+	{
+	Device::free(ptrTabGM);
+	}
+    }
+
+/*--------------------------------------*\
+ |*		Methode			*|
+ \*-------------------------------------*/
+
+void Slicing::run()
+    {
+    //slicing<<<dg,db>>>(ptrTabGM,n); // assynchrone
+    slicingAdvanced<<<dg,db,this->sizeOctetSM>>>(ptrTabGM,n);
+    float* ptrTab = new float[n];
+    // MM (Device -> Host)
+	{
+	Device::memcpyDToH(ptrTab, ptrTabGM, sizeOctet); // barriere synchronisation implicite
+	}
+    for(int i = 0; i<n;i++)
+	{
+	*ptrResult+=ptrTab[i];
+	}
+    *ptrResult = *ptrResult/(float)n;
+    delete ptrTab;
+    }
+
+/*--------------------------------------*\
+ |*		Private			*|
+ \*-------------------------------------*/
+
+/*----------------------------------------------------------------------*\
+ |*			End	 					*|
+ \*---------------------------------------------------------------------*/
