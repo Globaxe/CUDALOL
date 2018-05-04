@@ -1,5 +1,5 @@
-15:45:37 **** Incremental Build of configuration CudaGCC for project Student_Cuda_Demo3D ****
-cbicc cuda all 
+15:52:56 **** Incremental Build of configuration CudaGCC_parallel for project Student_Cuda_Demo2D ****
+cbicc cuda jall 
 
 --------------------------------------------------------
 [Runtime] : gcc x86
@@ -82,26 +82,25 @@ Built on Sun_Sep__4_22:14:01_CDT_2016
 Cuda compilation tools, release 8.0, V8.0.44
 
 
-[CUDA GCC] : all
+[CUDA GCC] : jall
 
 
 ==================================================================================
-[CBI] -> Target Name  : Student_Cuda_Demo3D_cuda_80_x86_64
+[CBI] -> Target Name  : Student_Cuda_Image_cuda_80_x86_64
 [CBI] ->
-[CBI] -> Build        : /tmp/ramdrive/arc9/Targets/Student_Cuda_Demo3D/bin/Student_Cuda_Demo3D_cuda_80_x86_64.run
+[CBI] -> Build        : /tmp/ramdrive/arc10/Targets/Student_Cuda_Image/bin/Student_Cuda_Image_cuda_80_x86_64.run
 [CBI] -> Deploy       : ../RELEASE/bin
 [CBI] ->
 [CBI] -> Type	      : EXE
 [CBI] -> Arch	      : x86_64
 [CBI] -> OS	 		  : Linux
-[CBI] -> User	 	  : arc9
+[CBI] -> User	 	  : arc10
 [CBI] ->
 [CBI] -> Task		  : Compiling-Linking !
 ==================================================================================
 
 [CBI] -> SRC AUX (Recursif) :
 [CBI] ->
-[CBI] ->              : ../Student_Cuda_Image/src/cpp/core
 
 [CBI] -> CXXFLAGS (Partial) :
 [CBI] ->
@@ -127,17 +126,9 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] ->              : -arch=sm_52
 
 [CBI] -> INC_PATH (auto detect):
-[CBI] ->              : ../Student_Cuda_Image/src/cpp/core/01_Rippling/01_animable/device/math/
-[CBI] ->              : ../Student_Cuda_Image/src/cpp/core/01_Rippling/01_animable/host/
-[CBI] ->              : ../Student_Cuda_Image/src/cpp/core/01_Rippling/02_provider/
-[CBI] ->              : ../Student_Cuda_Image/src/cpp/core/02_Mandelbrot/moo/device/math/
-[CBI] ->              : ../Student_Cuda_Image/src/cpp/core/02_Mandelbrot/moo/host/
-[CBI] ->              : ../Student_Cuda_Image/src/cpp/core/02_Mandelbrot/provider/
-[CBI] ->              : ../Student_Cuda_Image/src/cpp/core/04_RayTracing/
-[CBI] ->              : ../Student_Cuda_Image/src/cpp/core/04_RayTracing/moo/device/math/
-[CBI] ->              : ../Student_Cuda_Image/src/cpp/core/04_RayTracing/moo/host/
-[CBI] ->              : ../Student_Cuda_Image/src/cpp/core/04_RayTracing/provider/
-[CBI] ->              : src/cpp/core/scene/
+[CBI] ->              : src/cpp/core/02_Mandelbrot/moo/device/math/
+[CBI] ->              : src/cpp/core/02_Mandelbrot/moo/host/
+[CBI] ->              : src/cpp/core/02_Mandelbrot/provider/
 
 
 [CBI] -> LIB_PATH (auto detect):
@@ -160,51 +151,6 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] ->              : /opt/api/cbi/infographie/image/303/Bilat_Image_GL_Cuda/INC
 [CBI] ->              : /opt/api/cbi/infographie/image/303/Bilat_Image_GL_Cuda/INC/gpu
 [CBI] ->              : /opt/api/cbi/infographie/opengl/303/Bilat_OpenGL_Tools/INC
-[CBI] ->              : /opt/api/cbi/infographie/opengl/303/Bilat_OpenGL_Tools_Cuda/INC
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/model
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/model/shapes
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/model/shapes/cpu
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view/appearance
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view/geometry
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view/geometry/primitives
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view/geometry/shapes
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view/geometry/simple
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view/geometry/simple/cpu
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view/gl
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view/gl/primitives
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view/gl/renderer
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view/gl/shapes
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/INC/view/quadric
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_Cuda/INC
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_Cuda/INC/model
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_Cuda/INC/model/shapes
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_Cuda/INC/model/shapes/gpu
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_Cuda/INC/view
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_Cuda/INC/view/geometry
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_Cuda/INC/view/geometry/simple
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_Cuda/INC/view/geometry/simple/gpu
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_Cuda/INC/view/gl
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_FreeGlut/INC
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_FreeGlut/INC/glut
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL/INC
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL/INC/algo
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL/INC/algo/cpu
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL/INC/model
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL/INC/model/cpu
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL/INC/view
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL/INC/view/geometry
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL/INC/view/geometry/cpu
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL/INC/view/gl
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL_Cuda/INC
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL_Cuda/INC/algo
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL_Cuda/INC/algo/gpu
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL_Cuda/INC/model
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL_Cuda/INC/model/gpu
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL_Cuda/INC/view
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL_Cuda/INC/view/geometry
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL_Cuda/INC/view/geometry/gpu
 [CBI] ->              : /opt/api/cbi/infographie/tools/303/Bilat_tools_dll/INC
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cpp/303_006/INC
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cpp/303_006/INC/namespace_cpu
@@ -221,12 +167,6 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda/303_006/INC/cudatools/header/host
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda/303_006/INC/cudatools/header/mixte
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda/303_006/INC/cudatools/nvidia
-[CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_3D/303_006/INC
-[CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_3D/303_006/INC/3d
-[CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_3D/303_006/INC/3d/01_sceneplan
-[CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_3D/303_006/INC/3d/02_scenecube
-[CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_3D/303_006/INC/surface
-[CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_3D/303_006/INC/surface/scenesurfacestrip
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_image/303_006/INC
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_image/303_006/INC/imp
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_image/303_006/INC/imp/01_api_animateur
@@ -253,7 +193,8 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_opencv/303_006/INC/show/view/viewer
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_opencv/303_006/INC/show/view/viewerMat
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_opencv/303_006/INC/tools
-[CBI] ->              : /opt/api/ext/GLM/0975/include
+[CBI] ->              : /opt/api/ext/boost/1640/include
+[CBI] ->              : /opt/api/ext/boost/1640/include/boost
 [CBI] ->              : /opt/api/ext/opencv/330/include
 [CBI] ->              : /opt/api/ext/opencv/330/include/opencv
 [CBI] ->              : /opt/api/ext/opencv/330/include/opencv2
@@ -294,19 +235,13 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] ->              : /opt/api/cbi/infographie/image/303/Bilat_Image_GL/BIN/gcc
 [CBI] ->              : /opt/api/cbi/infographie/image/303/Bilat_Image_GL_Cuda/BIN/gcc
 [CBI] ->              : /opt/api/cbi/infographie/opengl/303/Bilat_OpenGL_Tools/BIN/gcc
-[CBI] ->              : /opt/api/cbi/infographie/opengl/303/Bilat_OpenGL_Tools_Cuda/BIN/gcc
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL/BIN/gcc
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_Cuda/BIN/gcc
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Scene3D_GL_FreeGlut/BIN/gcc
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL/BIN/gcc
-[CBI] ->              : /opt/api/cbi/infographie/scene3d/303/Bilat_Surface_GL_Cuda/BIN/gcc
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cpp/303_006/BIN/gcc
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda/303_006/BIN/gcc
-[CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_3D/303_006/BIN/gcc
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_image/303_006/BIN/gcc
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_cuda_image_cv/303_006/BIN/gcc
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_omp/303_006/BIN/gcc
 [CBI] ->              : /opt/api/cbi/tools/bilat_tools_opencv/303_006/BIN/gcc
+[CBI] ->              : /opt/api/ext/boost/1640/lib/gcc
 [CBI] ->              : /opt/api/ext/opencv/330/lib
 [CBI] ->              : /opt/api/ext/opencv/330/lib/pkgconfig
 [CBI] ->              : /usr/local/cuda-8.0/lib64
@@ -317,7 +252,6 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] -> API_LIBRARIES :
 [CBI] ->              : BilatTools_CPP_303_006_gcc_x86_64
 [CBI] ->              : BilatTools_Cuda_303_006_cuda_80_x86_64
-[CBI] ->              : BilatTools_Cuda_3D_303_006_cuda_80_x86_64
 [CBI] ->              : BilatTools_Cuda_Image_303_006_cuda_80_x86_64
 [CBI] ->              : BilatTools_Image_OpenCV_Cuda_303_006_cuda_80_x86_64
 [CBI] ->              : BilatTools_OMP_303_006_gcc_x86_64
@@ -330,16 +264,41 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] ->              : Bilat_Image_GL_303_gcc_x86_64
 [CBI] ->              : Bilat_Image_GL_Cuda_303_cuda_80_x86_64
 [CBI] ->              : Bilat_OpenGL_Tools_303_gcc_x86_64
-[CBI] ->              : Bilat_OpenGL_Tools_Cuda_303_cuda_80_x86_64
-[CBI] ->              : Bilat_Scene3D_FreeGlut_303_gcc_x86_64
-[CBI] ->              : Bilat_Scene3D_GL_303_gcc_x86_64
-[CBI] ->              : Bilat_Scene3D_GL_Cuda_303_cuda_80_x86_64
-[CBI] ->              : Bilat_Surface_GL_303_gcc_x86_64
-[CBI] ->              : Bilat_Surface_GL_Cuda_303_cuda_80_x86_64
 [CBI] ->              : GL
 [CBI] ->              : GLEW
 [CBI] ->              : GLU
 [CBI] ->              : OpenCL
+[CBI] ->              : boost_atomic-gcc484
+[CBI] ->              : boost_chrono-gcc484
+[CBI] ->              : boost_container-gcc484
+[CBI] ->              : boost_context-gcc484
+[CBI] ->              : boost_coroutine-gcc484
+[CBI] ->              : boost_date_time-gcc484
+[CBI] ->              : boost_filesystem-gcc484
+[CBI] ->              : boost_graph-gcc484
+[CBI] ->              : boost_iostreams-gcc484
+[CBI] ->              : boost_locale-gcc484
+[CBI] ->              : boost_log-gcc484
+[CBI] ->              : boost_log_setup-gcc484
+[CBI] ->              : boost_math_c99-gcc484
+[CBI] ->              : boost_math_c99f-gcc484
+[CBI] ->              : boost_math_c99l-gcc484
+[CBI] ->              : boost_math_tr1-gcc484
+[CBI] ->              : boost_math_tr1f-gcc484
+[CBI] ->              : boost_math_tr1l-gcc484
+[CBI] ->              : boost_prg_exec_monitor-gcc484
+[CBI] ->              : boost_program_options-gcc484
+[CBI] ->              : boost_random-gcc484
+[CBI] ->              : boost_regex-gcc484
+[CBI] ->              : boost_serialization-gcc484
+[CBI] ->              : boost_signals-gcc484
+[CBI] ->              : boost_system-gcc484
+[CBI] ->              : boost_thread-gcc484
+[CBI] ->              : boost_timer-gcc484
+[CBI] ->              : boost_type_erasure-gcc484
+[CBI] ->              : boost_unit_test_framework-gcc484
+[CBI] ->              : boost_wave-gcc484
+[CBI] ->              : boost_wserialization-gcc484
 [CBI] ->              : cublas
 [CBI] ->              : cuda
 [CBI] ->              : cudart
@@ -388,108 +347,14 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] ->              : opencv_videostab_gcc484
 
 
-[Student_Cuda_Demo3D_cuda_80_x86_64] -> g++ compiling .cpp : ../Student_Cuda_Image/src/cpp/core/mainImage.cpp
-[Student_Cuda_Demo3D_cuda_80_x86_64] -> g++ compiling .cpp : ../Student_Cuda_Image/src/cpp/core/02_Mandelbrot/provider/MandelbrotProvider3.cpp
-[Student_Cuda_Demo3D_cuda_80_x86_64] -> g++ compiling .cpp : ../Student_Cuda_Image/src/cpp/core/02_Mandelbrot/provider/MandelbrotProvider4.cpp
+[CBI] -> Compilation parallel (16 threads)
 
-[CBI] -> Linking to   : /tmp/ramdrive/arc9/Targets/Student_Cuda_Demo3D/bin/Student_Cuda_Demo3D_cuda_80_x86_64.run
+make[1]: Nothing to be done for `compilelink'.
 
-[CBI] -> Library Link :
-[CBI] ->
-[CBI] ->              : -lBilatTools_CPP_303_006_gcc_x86_64
-[CBI] ->              : -lBilatTools_Cuda_303_006_cuda_80_x86_64
-[CBI] ->              : -lBilatTools_Cuda_3D_303_006_cuda_80_x86_64
-[CBI] ->              : -lBilatTools_Cuda_Image_303_006_cuda_80_x86_64
-[CBI] ->              : -lBilatTools_Image_OpenCV_Cuda_303_006_cuda_80_x86_64
-[CBI] ->              : -lBilatTools_OMP_303_006_gcc_x86_64
-[CBI] ->              : -lBilatTools_OpenCV_303_006_gcc_x86_64
-[CBI] ->              : -lBilat_Fenetrage_Displayable_303_gcc_x86_64
-[CBI] ->              : -lBilat_Fenetrage_Displayable_GL_303_gcc_x86_64
-[CBI] ->              : -lBilat_Fenetrage_FreeGlut_Tools_303_gcc_x86_64
-[CBI] ->              : -lBilat_Image_FreeGlut_303_gcc_x86_64
-[CBI] ->              : -lBilat_Image_FreeGlut_Cuda_303_cuda_80_x86_64
-[CBI] ->              : -lBilat_Image_GL_303_gcc_x86_64
-[CBI] ->              : -lBilat_Image_GL_Cuda_303_cuda_80_x86_64
-[CBI] ->              : -lBilat_OpenGL_Tools_303_gcc_x86_64
-[CBI] ->              : -lBilat_OpenGL_Tools_Cuda_303_cuda_80_x86_64
-[CBI] ->              : -lBilat_Scene3D_FreeGlut_303_gcc_x86_64
-[CBI] ->              : -lBilat_Scene3D_GL_303_gcc_x86_64
-[CBI] ->              : -lBilat_Scene3D_GL_Cuda_303_cuda_80_x86_64
-[CBI] ->              : -lBilat_Surface_GL_303_gcc_x86_64
-[CBI] ->              : -lBilat_Surface_GL_Cuda_303_cuda_80_x86_64
-[CBI] ->              : -lGL
-[CBI] ->              : -lGLEW
-[CBI] ->              : -lGLU
-[CBI] ->              : -lOpenCL
-[CBI] ->              : -lcublas
-[CBI] ->              : -lcuda
-[CBI] ->              : -lcudart
-[CBI] ->              : -lcufft
-[CBI] ->              : -lcufftw
-[CBI] ->              : -lcuinj64
-[CBI] ->              : -lcurand
-[CBI] ->              : -lcusolver
-[CBI] ->              : -lcusparse
-[CBI] ->              : -lglut
-[CBI] ->              : -lgomp
-[CBI] ->              : -lnppc
-[CBI] ->              : -lnppi
-[CBI] ->              : -lnppial
-[CBI] ->              : -lnppicc
-[CBI] ->              : -lnppicom
-[CBI] ->              : -lnppidei
-[CBI] ->              : -lnppif
-[CBI] ->              : -lnppig
-[CBI] ->              : -lnppim
-[CBI] ->              : -lnppist
-[CBI] ->              : -lnppisu
-[CBI] ->              : -lnppitc
-[CBI] ->              : -lnpps
-[CBI] ->              : -lnvToolsExt
-[CBI] ->              : -lnvblas
-[CBI] ->              : -lnvgraph
-[CBI] ->              : -lnvidia-ml
-[CBI] ->              : -lnvrtc
-[CBI] ->              : -lnvrtc-builtins
-[CBI] ->              : -lopencv_calib3d_gcc484
-[CBI] ->              : -lopencv_core_gcc484
-[CBI] ->              : -lopencv_dnn_gcc484
-[CBI] ->              : -lopencv_features2d_gcc484
-[CBI] ->              : -lopencv_flann_gcc484
-[CBI] ->              : -lopencv_highgui_gcc484
-[CBI] ->              : -lopencv_imgcodecs_gcc484
-[CBI] ->              : -lopencv_imgproc_gcc484
-[CBI] ->              : -lopencv_ml_gcc484
-[CBI] ->              : -lopencv_objdetect_gcc484
-[CBI] ->              : -lopencv_photo_gcc484
-[CBI] ->              : -lopencv_shape_gcc484
-[CBI] ->              : -lopencv_stitching_gcc484
-[CBI] ->              : -lopencv_superres_gcc484
-[CBI] ->              : -lopencv_video_gcc484
-[CBI] ->              : -lopencv_videoio_gcc484
-[CBI] ->              : -lopencv_videostab_gcc484
-
-
-==================================================================================
-[CBI] -> Target Name  : Student_Cuda_Demo3D_cuda_80_x86_64
-[CBI] -> Location     : /tmp/ramdrive/arc9/Targets/Student_Cuda_Demo3D/bin/Student_Cuda_Demo3D_cuda_80_x86_64.run
-[CBI] -> Deploy 	  : ../RELEASE/bin
-[CBI] ->
-[CBI] -> Type	 	  : EXE
-[CBI] -> Arch	 	  : x86_64
-[CBI] -> OS	 	      : Linux
-[CBI] -> User	 	  : arc9
-[CBI] ->
-[CBI] -> Compilateur  : g++ && nvcc
-[CBI] -> Task		  : End Compiling-Linking !
-[CBI] -> Time		  : 3 (s)
-==================================================================================
-
-
-[CBI] -> Deploying      : ../RELEASE/bin/Student_Cuda_Demo3D_cuda_80_x86_64.run
+[CBI] -> Deploying      : ../RELEASE/bin/Student_Cuda_Image_cuda_80_x86_64.run
 
 [CBI] -> Symlink Project Inc
 [CBI] -> To update code completion : ctrl-shift-s   or   gui/index/rebuild
 
-[CBI] -> Student_Cuda_Demo3D_cuda_80_x86_64   : End ALL!
+[CBI] -> Student_Cuda_Image_cuda_80_x86_64 : End ALL!
 

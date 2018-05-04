@@ -50,8 +50,8 @@ bool useMonteCarlo()
 	dim3 db = dim3(coreMP, 1, 1);   	// bloc 1D pour simplifier la réduction intrathread
 	Grid grid(dg, db);
 
-	MonteCarlo montecarlo(grid, n, m);
-	//MonteCarloMultiGPU montecarlo(grid, n, m);
+	//MonteCarlo montecarlo(grid, n, m);
+	MonteCarloMultiGPU montecarlo(grid, n, m);
 
 	montecarlo.run();
 

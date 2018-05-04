@@ -13,10 +13,11 @@
 </workingSet>
 <workingSet editPageId="org.eclipse.cdt.ui.CElementWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1367415214911_169" label="Student" name="Student">
 <item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/Student_Cuda" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/Student_Cuda_Demo3D" type="4"/>
 <item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/Student_Cuda_Image" type="4"/>
 <item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/Student_OMP" type="4"/>
 <item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/Student_OMP_Image" type="4"/>
-<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/Student_Cuda_Demo3D" type="4"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/Student_Cuda_Demo2D" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1391266587718_313" label="Target" name="Target">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RELEASE" type="4"/>

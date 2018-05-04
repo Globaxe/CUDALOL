@@ -95,8 +95,7 @@ void MonteCarlo::run()
 	{
 	Device::memcpyDToH(&n0, ptrDevTabGM, sizeOctetGM); // barriere synchronisation implicite
 	}
-    cout << "n0 : " << n0 << "\n";
-    cout << "n : " << n << "\n";
+
     pi = 4.f * n0 / n;
     }
 
