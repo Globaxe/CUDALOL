@@ -1,1 +1,0 @@
-/home/arc10/CUDA/toStudent/code/WCuda/Cpp_Exercice/src/cpp/test/junit/TestIntegerJunit.h

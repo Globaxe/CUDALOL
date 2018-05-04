@@ -44,7 +44,6 @@ int mainCore()
     isOk &= useHello();
     isOk &= useAddVecteur();
     isOk &= useSlicing();
-    isOk &= useMonteCarlo();
 
     cout << "\nisOK = " << isOk << endl;
     cout << "\nEnd : mainCore" << endl;

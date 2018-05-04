@@ -1,1 +1,1 @@
-/home/arc10/Desktop/CUDALOL/WCuda/Student_Cuda_Image//src/cpp/core/02_Mandelbrot/provider/MandelbrotProvider.h
+/home/arc9/CUDA/toStudent/code/WCuda/Student_Cuda_Image//src/cpp/core/02_Mandelbrot/provider/MandelbrotProvider.h

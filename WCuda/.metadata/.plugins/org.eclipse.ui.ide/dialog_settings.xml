@@ -14,9 +14,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="/home/arc10/Desktop/CUDALOL/WCuda"/>
-			<item value="/home/arc10/CUDA/toStudent/code/WCuda/"/>
-			<item value="/home/arc10/CUDA/toStudent/code/WCuda"/>
+			<item value="/home/arc9/CUDA/toStudent/code/WCuda/Student_Cuda_Demo3D"/>
+			<item value="/home/arc9/CUDA/toStudent/code/WCuda"/>
 			<item value="/home/bilat/CBI/Dropbox/01_CBI_CODE/Cuda/WCuda/BilatTools_JNI"/>
 			<item value="/home/bilat/CBI/Dropbox/01_CBI_CODE/Cuda/WCuda/Cuda_Surface_3D"/>
 			<item value="/home/bilat/CBI/Dropbox/01_CBI_CODE/Cuda/WCuda/Tuto_Surface_Cuda"/>
@@ -34,6 +33,7 @@
 			<item value="G:\CBI\HEARC\RAD\Running\CudaTuto\02_Scientifique\01_Code\WCudaMSE\Tuto_gphoto2_Linux"/>
 			<item value="G:\CBI\HEARC\RAD\Running\CudaTuto\02_Scientifique\01_Code\WCudaMSE\BilatTools_V4L_linux"/>
 			<item value="G:\CBI\HEARC\RAD\Running\CudaTuto\02_Scientifique\01_Code\WCudaMSE\BUILDER_Symlink"/>
+			<item value="G:\CBI\HEARC\RAD\Running\CudaTuto\02_Scientifique\01_Code\WCudaMSE\Farmwise_12_Use"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>

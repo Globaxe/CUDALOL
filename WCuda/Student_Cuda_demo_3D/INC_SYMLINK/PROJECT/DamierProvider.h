@@ -1,1 +1,0 @@
-/home/arc10/CUDA/toStudent/code/WCuda/Student_Cuda_demo_3D//../Tuto_Image_Cuda/src/core/01_simple_RGBA_uchar4/02_Damier_Zoomable/02_provider/DamierProvider.h

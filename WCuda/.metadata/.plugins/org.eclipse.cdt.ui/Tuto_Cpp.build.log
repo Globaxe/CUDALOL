@@ -1,4 +1,4 @@
-13:44:58 **** Incremental Build of configuration GCC for project Tuto_Cpp ****
+12:56:10 **** Incremental Build of configuration GCC for project Tuto_Cpp ****
 cbicc gcc all 
 
 --------------------------------------------------------
@@ -81,13 +81,13 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ==================================================================================
 [CBI] -> Target Name  : Tuto_CPP_gcc_x86_64
 [CBI] ->
-[CBI] -> Build     	  : /tmp/ramdrive/arc10/Targets/Tuto_CPP/bin/Tuto_CPP_gcc_x86_64.run
+[CBI] -> Build     	  : /tmp/ramdrive/arc9/Targets/Tuto_CPP/bin/Tuto_CPP_gcc_x86_64.run
 [CBI] -> Deploy       : ../RELEASE/bin
 [CBI] ->
 [CBI] -> Type	 	  : EXE
 [CBI] -> Arch	 	  : x86_64
 [CBI] -> OS	 		  : Linux
-[CBI] -> User	 	  : arc10
+[CBI] -> User	 	  : arc9
 [CBI] ->
 [CBI] -> Task		  : Compiling-Linking
 ==================================================================================
@@ -108,7 +108,26 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 [CBI] ->
 
 [CBI] -> INC_PATH (auto detect):
-[CBI] ->              : src/
+[CBI] ->              : src/cpp/core/01_classe/
+[CBI] ->              : src/cpp/core/02_derivate/base/
+[CBI] ->              : src/cpp/core/02_derivate/deriver/
+[CBI] ->              : src/cpp/core/03_structure_cpp/
+[CBI] ->              : src/cpp/core/04_destruction/identity1/
+[CBI] ->              : src/cpp/core/04_destruction/identity2/
+[CBI] ->              : src/cpp/core/05_polymorphisme/dessin/
+[CBI] ->              : src/cpp/core/05_polymorphisme/forme/
+[CBI] ->              : src/cpp/core/05_polymorphisme/forme/cercle/
+[CBI] ->              : src/cpp/core/05_polymorphisme/forme/rectangle/
+[CBI] ->              : src/cpp/core/05_polymorphisme/forme/rectangle/carrer/
+[CBI] ->              : src/cpp/core/06_template/
+[CBI] ->              : src/cpp/core/07_surcharge/a_cout/
+[CBI] ->              : src/cpp/core/07_surcharge/b_add/
+[CBI] ->              : src/cpp/core/07_surcharge/c_crochet/
+[CBI] ->              : src/cpp/core/09_allocation/
+[CBI] ->              : src/cpp/core/10_advanced/a_echaufement/
+[CBI] ->              : src/cpp/core/10_advanced/b_enfer_or_not/
+[CBI] ->              : src/cpp/test/01_hello/
+[CBI] ->              : src/cpp/test/02_calculatrice/
 
 [CBI] -> LIB_PATH (auto detect):
 
@@ -123,38 +142,72 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 [CBI] -> API_LIBRARIES :
 
+[CBI] -> Create folder : /tmp/ramdrive/arc9/Targets/Tuto_CPP/bin
+[CBI] -> Create folder : /tmp/ramdrive/arc9/Targets/Tuto_CPP/obj
 
-[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/Main.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/main.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/test/mainTest.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/test/02_calculatrice/TestCalculatrice.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/test/01_hello/TestHello.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/mainCore.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/02_derivate/useDerivate.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/02_derivate/deriver/HeureMinuteSeconde.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/02_derivate/base/HeureMinute.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/09_allocation/Personne.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/09_allocation/useAllocation.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/03_structure_cpp/useStruture.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/06_template/useInterval.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/04_destruction/useIdentity.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/04_destruction/identity1/Identity1.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/04_destruction/identity2/Identity2.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/10_advanced/a_echaufement/Banane.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/10_advanced/a_echaufement/useBanane.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/10_advanced/b_enfer_or_not/Array.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/10_advanced/b_enfer_or_not/useArray.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/05_polymorphisme/usePolymorphisme.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/05_polymorphisme/dessin/Dessin.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/05_polymorphisme/forme/Forme_A.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/05_polymorphisme/forme/cercle/Cercle.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/05_polymorphisme/forme/rectangle/Rectangle.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/05_polymorphisme/forme/rectangle/carrer/Carrer.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/01_classe/Calculatrice.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/01_classe/useCalculatrice.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/07_surcharge/b_add/Prix.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/07_surcharge/b_add/usePrix.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/07_surcharge/a_cout/Homme.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/07_surcharge/a_cout/useHomme.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/07_surcharge/c_crochet/ListInt.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/07_surcharge/c_crochet/useListInt.cpp
+[Tuto_CPP_gcc_x86_64] -> g++ compiling .cpp : src/cpp/core/08_passage/usePassage.cpp
 
-[CBI] -> Linking to   : /tmp/ramdrive/arc10/Targets/Tuto_CPP/bin/Tuto_CPP_gcc_x86_64.run
+[CBI] -> Linking to   : /tmp/ramdrive/arc9/Targets/Tuto_CPP/bin/Tuto_CPP_gcc_x86_64.run
 
 [CBI] -> Library Link :
 [CBI] ->              : -lCpp_Test_112_gcc_x86_64
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 0 has invalid symbol index 11
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 1 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 2 has invalid symbol index 2
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 3 has invalid symbol index 2
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 4 has invalid symbol index 11
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 5 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 6 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 7 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 8 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 9 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 10 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 11 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 12 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 13 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 14 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 15 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 16 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 17 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 18 has invalid symbol index 13
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 19 has invalid symbol index 21
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_line): relocation 0 has invalid symbol index 2
-/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o: In function `_start':
-(.text+0x20): undefined reference to `main'
-collect2: error: ld returned 1 exit status
-make: *** [/tmp/ramdrive/arc10/Targets/Tuto_CPP/bin/Tuto_CPP_gcc_x86_64.run] Error 1
 
-13:44:58 Build Finished (took 170ms)
+==================================================================================
+[CBI] -> Target Name  : Tuto_CPP_gcc_x86_64
+[CBI] -> Location     : /tmp/ramdrive/arc9/Targets/Tuto_CPP/bin/Tuto_CPP_gcc_x86_64.run
+[CBI] -> Deploy 	  : ../RELEASE/bin
+[CBI] ->
+[CBI] -> Type	 	  : EXE
+[CBI] -> Arch	 	  : x86_64
+[CBI] -> OS	 		  : Linux
+[CBI] -> User	 	  : arc9
+[CBI] ->
+[CBI] -> Compilateur  : g++
+[CBI] -> Task	      : End Compiling-Linking !
+[CBI] -> Time		  : 9 (s)
+==================================================================================
+
+
+[CBI] -> Deploying    : ../RELEASE/bin/Tuto_CPP_gcc_x86_64.run
+
+[CBI] -> Symlink Project Inc
+[CBI] -> To update code completion : ctrl-shift-s   or   gui/index/rebuild
+
+[CBI] -> Tuto_CPP_gcc_x86_64 : End ALL!
+
+
+12:56:19 Build Finished (took 9s.331ms)
 

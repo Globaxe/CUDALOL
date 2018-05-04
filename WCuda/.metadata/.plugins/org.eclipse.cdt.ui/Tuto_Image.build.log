@@ -1,4 +1,4 @@
-17:15:08 **** Incremental Build of configuration GCC_parallel for project Tuto_Image ****
+14:33:08 **** Build of configuration GCC_parallel for project Tuto_Image ****
 cbicc gcc jall 
 
 --------------------------------------------------------
@@ -81,13 +81,13 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ==================================================================================
 [CBI] -> Target Name  : Tuto_Image_gcc_x86_64
 [CBI] ->
-[CBI] -> Build     	  : /tmp/ramdrive/bilat/Targets/Tuto_Image/bin/Tuto_Image_gcc_x86_64.run
+[CBI] -> Build     	  : /tmp/ramdrive/arc9/Targets/Tuto_Image/bin/Tuto_Image_gcc_x86_64.run
 [CBI] -> Deploy       : ../RELEASE/bin
 [CBI] ->
 [CBI] -> Type	 	  : EXE
 [CBI] -> Arch	 	  : x86_64
 [CBI] -> OS	 		  : Linux
-[CBI] -> User	 	  : bilat
+[CBI] -> User	 	  : arc9
 [CBI] ->
 [CBI] -> Task		  : Compiling-Linking
 ==================================================================================
@@ -195,10 +195,72 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 [CBI] ->              : GLU
 [CBI] ->              : glut
 
+[CBI] -> Create folder : /tmp/ramdrive/arc9/Targets/Tuto_Image/bin
+[CBI] -> Create folder : /tmp/ramdrive/arc9/Targets/Tuto_Image/obj
 
-[CBI] -> Compilation parallel (32 threads)
+[CBI] -> Compilation parallel (16 threads)
 
-make[1]: Nothing to be done for `compilelink'.
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/main.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/mainAnimable.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/mainImage.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/03_domaine/03_provider/DomaineProvider.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/03_domaine/01_image/ImageCustomDomaine.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/03_domaine/01_image/listener/key/DomaineKeyListener.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/02_overlay/03_provider/OverlayProvider.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/02_overlay/01_image/ImageOverlay.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/02_overlay/01_image/graphic2D/ExampleDrawer2D.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/01_event/03_provider/EventProvider.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/01_event/01_image/ImageCustomEvent.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/01_event/01_image/listener/key/SimpleKeyListener.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/01_event/01_image/listener/mouse/SimpleMouseListener.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/04_opengl_pure/01_opengl/MyDisplayable.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/03_advanced/04_opengl_pure/03_provider/MyDisplayableProvider.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/01_simple_RGBA_uchar4/01_Vague/01_animable/Vague.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/01_simple_RGBA_uchar4/01_Vague/02_Provider/VagueProvider.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/01_simple_RGBA_uchar4/02_Damier_zoomable/01_animable/Damier.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/01_simple_RGBA_uchar4/02_Damier_zoomable/02_Provider/DamierProvider.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/02_simple_type/04_Damier_HUE_float/01_animable/DamierHueFloat.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/02_simple_type/04_Damier_HUE_float/02_Provider/DamierHueFloatProvider.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/02_simple_type/01_Vague_GRAY_uchar/01_animable/VagueGray.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/02_simple_type/01_Vague_GRAY_uchar/02_Provider/VagueGrayProvider.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/02_simple_type/02_Damier_RGBA_float4/01_animable/DamierRGBAFloat.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/02_simple_type/02_Damier_RGBA_float4/02_Provider/DamierRGBAFloatProvider.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/02_simple_type/03_Damier_HSBA_float4/01_animable/DamierHSBAFloat.cpp
+[Tuto_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/02_simple_type/03_Damier_HSBA_float4/02_Provider/DamierHSBAFloatProvider.cpp
+
+[CBI] -> Linking to   : /tmp/ramdrive/arc9/Targets/Tuto_Image/bin/Tuto_Image_gcc_x86_64.run
+
+[CBI] -> Library Link :
+[CBI] ->              : -lBilatTools_CPP_303_006_gcc_x86_64
+[CBI] ->              : -lBilatTools_Image_303_006_gcc_x86_64
+[CBI] ->              : -lBilatTools_OMP_303_006_gcc_x86_64
+[CBI] ->              : -lBilat_Fenetrage_Displayable_303_gcc_x86_64
+[CBI] ->              : -lBilat_Fenetrage_Displayable_GL_303_gcc_x86_64
+[CBI] ->              : -lBilat_Fenetrage_FreeGlut_Tools_303_gcc_x86_64
+[CBI] ->              : -lBilat_Image_FreeGlut_303_gcc_x86_64
+[CBI] ->              : -lBilat_Image_GL_303_gcc_x86_64
+[CBI] ->              : -lBilat_OpenGL_Tools_303_gcc_x86_64
+[CBI] ->              : -lGL
+[CBI] ->              : -lGLEW
+[CBI] ->              : -lGLU
+[CBI] ->              : -lglut
+[CBI] ->              : -lgomp
+
+==================================================================================
+[CBI] -> Target Name  : Tuto_Image_gcc_x86_64
+[CBI] -> Location     : /tmp/ramdrive/arc9/Targets/Tuto_Image/bin/Tuto_Image_gcc_x86_64.run
+[CBI] -> Deploy 	  : ../RELEASE/bin
+[CBI] ->
+[CBI] -> Type	 	  : EXE
+[CBI] -> Arch	 	  : x86_64
+[CBI] -> OS	 		  : Linux
+[CBI] -> User	 	  : arc9
+[CBI] ->
+[CBI] -> Compilateur  : g++
+[CBI] -> Task	      : End Compiling-Linking !
+[CBI] -> Time		  : 1 (s)
+==================================================================================
+
 
 [CBI] -> Deploying    : ../RELEASE/bin/Tuto_Image_gcc_x86_64.run
 
@@ -208,5 +270,5 @@ make[1]: Nothing to be done for `compilelink'.
 [CBI] -> Tuto_Image_gcc_x86_64 : End ALL!
 
 
-17:15:09 Build Finished (took 1s.329ms)
+14:33:11 Build Finished (took 2s.225ms)
 

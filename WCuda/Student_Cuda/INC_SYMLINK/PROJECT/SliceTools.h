@@ -1,1 +1,1 @@
-/home/arc10/CUDA/toStudent/code/WCuda/Student_Cuda//src/cpp/core/04_Montecarlo/00_tools/SliceTools.h
+/home/arc9/CUDA/toProf/code/WCuda/Student_Cuda//src/cpp/core/04_Montecarlo/00_tools/SliceTools.h

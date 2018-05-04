@@ -1,1 +1,1 @@
-/home/arc10/Desktop/CUDALOL/WCuda/Student_Cuda//src/cpp/core/03_Slice/host/Slicing.h
+/home/arc9/CUDA/toProf/code/WCuda/Student_Cuda//src/cpp/core/03_Slice/host/Slicing.h
