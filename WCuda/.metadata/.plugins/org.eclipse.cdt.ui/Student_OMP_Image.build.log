@@ -1,4 +1,4 @@
-13:46:28 **** Incremental Build of configuration GCC_parallel for project Student_OMP_Image ****
+13:29:55 **** Incremental Build of configuration GCC_parallel for project Student_OMP_Image ****
 cbicc gcc jall 
 
 --------------------------------------------------------
@@ -81,13 +81,13 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ==================================================================================
 [CBI] -> Target Name  : Student_OMP_Image_gcc_x86_64
 [CBI] ->
-[CBI] -> Build     	  : /tmp/ramdrive/arc9/Targets/Student_OMP_Image/bin/Student_OMP_Image_gcc_x86_64.run
+[CBI] -> Build     	  : /tmp/ramdrive/arc10/Targets/Student_OMP_Image/bin/Student_OMP_Image_gcc_x86_64.run
 [CBI] -> Deploy       : ../RELEASE/bin
 [CBI] ->
 [CBI] -> Type	 	  : EXE
 [CBI] -> Arch	 	  : x86_64
 [CBI] -> OS	 		  : Linux
-[CBI] -> User	 	  : arc9
+[CBI] -> User	 	  : arc10
 [CBI] ->
 [CBI] -> Task		  : Compiling-Linking
 ==================================================================================
@@ -235,12 +235,20 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 [CBI] ->              : opencv_videoio_gcc484
 [CBI] ->              : opencv_videostab_gcc484
 
+[CBI] -> Create folder : /tmp/ramdrive/arc10/Targets/Student_OMP_Image/bin
+[CBI] -> Create folder : /tmp/ramdrive/arc10/Targets/Student_OMP_Image/obj
 
 [CBI] -> Compilation parallel (16 threads)
 
+[Student_OMP_Image_gcc_x86_64] -> g++ compiling .cpp : src/main.cpp
+[Student_OMP_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/mainAnimable.cpp
 [Student_OMP_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/mainImage.cpp
+[Student_OMP_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/01_Rippling/a_animable/Rippling.cpp
+[Student_OMP_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/01_Rippling/b_provider/RipplingProvider.cpp
+[Student_OMP_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/02_Mandelbrot_Julia/a_animable/Mandelbrot.cpp
+[Student_OMP_Image_gcc_x86_64] -> g++ compiling .cpp : src/core/02_Mandelbrot_Julia/b_provider/MandelbrotProvider.cpp
 
-[CBI] -> Linking to   : /tmp/ramdrive/arc9/Targets/Student_OMP_Image/bin/Student_OMP_Image_gcc_x86_64.run
+[CBI] -> Linking to   : /tmp/ramdrive/arc10/Targets/Student_OMP_Image/bin/Student_OMP_Image_gcc_x86_64.run
 
 [CBI] -> Library Link :
 [CBI] ->              : -lBilatTools_CPP_303_006_gcc_x86_64
@@ -279,13 +287,13 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ==================================================================================
 [CBI] -> Target Name  : Student_OMP_Image_gcc_x86_64
-[CBI] -> Location     : /tmp/ramdrive/arc9/Targets/Student_OMP_Image/bin/Student_OMP_Image_gcc_x86_64.run
+[CBI] -> Location     : /tmp/ramdrive/arc10/Targets/Student_OMP_Image/bin/Student_OMP_Image_gcc_x86_64.run
 [CBI] -> Deploy 	  : ../RELEASE/bin
 [CBI] ->
 [CBI] -> Type	 	  : EXE
 [CBI] -> Arch	 	  : x86_64
 [CBI] -> OS	 		  : Linux
-[CBI] -> User	 	  : arc9
+[CBI] -> User	 	  : arc10
 [CBI] ->
 [CBI] -> Compilateur  : g++
 [CBI] -> Task	      : End Compiling-Linking !
@@ -301,5 +309,5 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 [CBI] -> Student_OMP_Image_gcc_x86_64 : End ALL!
 
 
-13:46:29 Build Finished (took 1s.365ms)
+13:29:56 Build Finished (took 1s.480ms)
 

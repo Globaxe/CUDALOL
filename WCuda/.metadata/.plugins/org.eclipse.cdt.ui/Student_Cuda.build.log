@@ -1,4 +1,4 @@
-15:13:59 **** Incremental Build of configuration CudaGCC_parallel for project Student_Cuda ****
+17:02:40 **** Incremental Build of configuration CudaGCC_parallel for project Student_Cuda ****
 cbicc cuda jall 
 
 --------------------------------------------------------
@@ -129,7 +129,9 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] -> INC_PATH (auto detect):
 [CBI] ->              : src/cpp/core/02_Hello_add_vector/00_tools/
 [CBI] ->              : src/cpp/core/02_Hello_add_vector/01_objet/host/
-[CBI] ->              : src/cpp/core/03_Slice/host/
+[CBI] ->              : src/cpp/core/03_Slice/00_tools/
+[CBI] ->              : src/cpp/core/03_Slice/01_objet/host/
+[CBI] ->              : src/cpp/core/04_Montecarlo/00_tools/
 [CBI] ->              : src/cpp/core/04_Montecarlo/01_objet/host/
 [CBI] ->              : src/cpp/test/junit/01_Test_Hello/
 [CBI] ->              : src/cpp/test/junit/02_Test_Vector/
@@ -242,10 +244,32 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] ->              : nvrtc
 [CBI] ->              : nvrtc-builtins
 
+[CBI] -> Create folder : /tmp/ramdrive/arc10/Targets/Student_Cuda/bin
+[CBI] -> Create folder : /tmp/ramdrive/arc10/Targets/Student_Cuda/obj
+[CBI] -> Create folder : /tmp/ramdrive/arc10/Targets/Student_Cuda/cubin
 
 [CBI] -> Compilation parallel (16 threads)
 
+[Student_Cuda_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/main.cpp
+[Student_Cuda_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/test/mainTest.cpp
+[Student_Cuda_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/test/junit/01_Test_Hello/TestHello.cpp
+[Student_Cuda_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/test/junit/02_Test_Vector/TestVector.cpp
+[Student_Cuda_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/mainCore.cpp
+[Student_Cuda_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/02_Hello_add_vector/00_tools/VectorTools.cpp
+[Student_Cuda_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/02_Hello_add_vector/01_objet/useAddVector.cpp
+[Student_Cuda_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/04_Montecarlo/00_tools/SliceTools.cpp
+[Student_Cuda_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/04_Montecarlo/01_objet/useMonteCarlo.cpp
+[Student_Cuda_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/01_Hello/useHello.cpp
+[Student_Cuda_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/03_Slice/01_objet/useSlice.cpp
+[Student_Cuda_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/02_Hello_add_vector/01_objet/device/addVector_device.cu
+[Student_Cuda_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/02_Hello_add_vector/01_objet/host/AddVector.cu
+[Student_Cuda_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/04_Montecarlo/01_objet/device/MonteCarlo_device.cu
+[Student_Cuda_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/04_Montecarlo/01_objet/host/MonteCarloMultiGPU.cu
 [Student_Cuda_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/04_Montecarlo/01_objet/host/MonteCarlo.cu
+[Student_Cuda_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/01_Hello/01_helloCuda.cu
+[Student_Cuda_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/01_Hello/02_hello_add.cu
+[Student_Cuda_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/03_Slice/01_objet/device/Slice_device.cu
+[Student_Cuda_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/03_Slice/01_objet/host/Slice.cu
 
 [CBI] -> Linking to   : /tmp/ramdrive/arc10/Targets/Student_Cuda/bin/Student_Cuda_cuda_80_x86_64.run
 
@@ -338,9 +362,10 @@ Cuda compilation tools, release 8.0, V8.0.44
 
 [CBI] -> Symlink Project Inc
 [CBI] -> To update code completion : ctrl-shift-s   or   gui/index/rebuild
+Warning : symlink INC_SYMLINK/PROJECT/SliceTools.h already exist for /home/arc10/CUDA/toStudent/code/WCuda/Student_Cuda//src/cpp/core/03_Slice/00_tools/SliceTools.h
 
 [CBI] -> Student_Cuda_cuda_80_x86_64 : End ALL!
 
 
-15:14:02 Build Finished (took 3s.578ms)
+17:02:43 Build Finished (took 3s.647ms)
 

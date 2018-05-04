@@ -1,4 +1,4 @@
-15:32:45 **** Incremental Build of configuration CudaGCC_parallel for project Student_Cuda_Image ****
+14:37:27 **** Incremental Build of configuration CudaGCC_parallel for project Student_Cuda_Image ****
 cbicc cuda jall 
 
 --------------------------------------------------------
@@ -129,10 +129,7 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] ->              : src/cpp/core/01_Rippling/01_animable/device/math/
 [CBI] ->              : src/cpp/core/01_Rippling/01_animable/host/
 [CBI] ->              : src/cpp/core/01_Rippling/02_provider/
-[CBI] ->              : src/cpp/core/02_Mandelbrot/moo/device/math/
-[CBI] ->              : src/cpp/core/02_Mandelbrot/moo/host/
-[CBI] ->              : src/cpp/core/02_Mandelbrot/provider/
-[CBI] ->              : src/cpp/core/04_RayTracing/
+[CBI] ->              : src/cpp/core/04_RayTracing/moo/
 [CBI] ->              : src/cpp/core/04_RayTracing/moo/device/math/
 [CBI] ->              : src/cpp/core/04_RayTracing/moo/host/
 [CBI] ->              : src/cpp/core/04_RayTracing/provider/
@@ -353,30 +350,10 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] ->              : opencv_videoio_gcc484
 [CBI] ->              : opencv_videostab_gcc484
 
-[CBI] -> Create folder : /tmp/ramdrive/arc10/Targets/Student_Cuda_Image/bin
-[CBI] -> Create folder : /tmp/ramdrive/arc10/Targets/Student_Cuda_Image/obj
-[CBI] -> Create folder : /tmp/ramdrive/arc10/Targets/Student_Cuda_Image/cubin
 
 [CBI] -> Compilation parallel (16 threads)
 
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/main.cpp
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/mainAnimable.cpp
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/mainBarivox.cpp
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/mainBruteForce.cpp
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/mainImage.cpp
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/04_RayTracing/provider/RayTracingProvider.cpp
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/04_RayTracing/moo/host/SphereCreator.cpp
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/02_Mandelbrot/provider/MandelbrotProvider2.cpp
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/02_Mandelbrot/provider/MandelbrotProvider3.cpp
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/02_Mandelbrot/provider/MandelbrotProvider4.cpp
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/02_Mandelbrot/provider/MandelbrotProvider.cpp
-[Student_Cuda_Image_cuda_80_x86_64] -> g++ compiling .cpp : src/cpp/core/01_Rippling/02_provider/RipplingProvider.cpp
 [Student_Cuda_Image_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/04_RayTracing/moo/device/rayTracingDevice.cu
-[Student_Cuda_Image_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/04_RayTracing/moo/host/RayTracing.cu
-[Student_Cuda_Image_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/02_Mandelbrot/moo/device/MandelbrotDevice.cu
-[Student_Cuda_Image_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/02_Mandelbrot/moo/host/Mandelbrot.cu
-[Student_Cuda_Image_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/01_Rippling/01_animable/device/ripplingDevice.cu
-[Student_Cuda_Image_cuda_80_x86_64] -> nvcc compiling .cu : src/cpp/core/01_Rippling/01_animable/host/Rippling.cu
 
 [CBI] -> Linking to   : /tmp/ramdrive/arc10/Targets/Student_Cuda_Image/bin/Student_Cuda_Image_cuda_80_x86_64.run
 
@@ -504,5 +481,5 @@ Cuda compilation tools, release 8.0, V8.0.44
 [CBI] -> Student_Cuda_Image_cuda_80_x86_64 : End ALL!
 
 
-15:32:49 Build Finished (took 3s.962ms)
+14:37:31 Build Finished (took 3s.678ms)
 

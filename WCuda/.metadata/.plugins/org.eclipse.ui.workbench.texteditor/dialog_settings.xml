@@ -15,9 +15,8 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="AddVector"/>
+			<item value="ray"/>
 			<item value="rippling"/>
-			<item value="Rippling"/>
 			<item value="mallaoc"/>
 			<item value="memclear"/>
 			<item value="384"/>
@@ -28,10 +27,6 @@
 			<item value="TIme"/>
 		</list>
 		<list key="replacehistory">
-			<item value="Slicing"/>
-			<item value="RayTracing"/>
-			<item value="rayTracing"/>
-			<item value="raytra"/>
 			<item value="WorkGPUStream"/>
 			<item value="long"/>
 			<item value="rowMajorTools.h"/>

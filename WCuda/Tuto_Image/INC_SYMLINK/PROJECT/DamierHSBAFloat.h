@@ -1,1 +1,1 @@
-/home/arc9/CUDA/toStudent/code/WCuda/Tuto_Image//src/core/02_simple_type/03_Damier_HSBA_float4/01_animable/DamierHSBAFloat.h
+/home/bilat/CBI/CoursCuda/toStudent/code/WCuda/Tuto_Image/src/core/02_simple_type/03_Damier_HSBA_float4/01_animable/DamierHSBAFloat.h
